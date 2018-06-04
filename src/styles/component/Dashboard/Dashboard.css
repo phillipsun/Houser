@@ -1,0 +1,37 @@
+.dashboard {
+  width: 50vw;
+  background-color: #e5f4ec;
+}
+
+.dashboard__header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.dashboard__heading {
+  font-size: 40px;
+  color: #3b5249;
+  margin: 20px;
+}
+
+.dashboard__header-button {
+  margin: 20px;
+  background-color: #8aea92;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.dashboard__listings-container {
+  border-top: 1px solid #000;
+  margin: 0 20px 10px;
+}
+
+.dashboard__listings-heading {
+  margin: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}

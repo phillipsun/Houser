@@ -1,0 +1,19 @@
+.house__container {
+  width: 100%;
+  height: 150px;
+  background-color: #dedede;
+  margin: 20px 0;
+  position: relative;
+}
+
+.house {
+  height: 100%;
+  width: 90%;
+  padding: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}

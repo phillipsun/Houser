@@ -2,7 +2,7 @@ module.exports = {
 
   // CREATE PRODUCT
   createHouse: (req, res) => {
-    console.log("Got POST request!");
+    console.log("Posting a new house...");
     
     const db = req.app.get('db');
     
@@ -18,21 +18,35 @@ module.exports = {
       .catch( () => res.status(500).send() );
   },
 
-
   // READ HOUSES
   readHouses: (req, res) => {
-    console.log("Getting all houses...");
+    console.log("Fetching houses...");
     const db = req.app.get('db');
 
     db.read_houses()
-      .then( products => {
-        res.status(200).send(products);
+      .then( houses => {
+        res.status(200).send(houses);
+      })
+      .catch( err => {
+        console.log(err);
+        res.status(500).send(err);
+      })
+  },
+
+  // DELETE HOUSE
+  deleteHouse: (req, res) => {
+    console.log("Deleting house...");
+    const db = req.app.get('db');
+
+    const { params } = req;
+
+    db.delete_house( [params.id] )
+      .then( houses => {
+        res.status(200).send(houses);
       })
       .catch( err => {
         console.log(err);
         res.status(500).send(err);
       })
   }
-
-
 }

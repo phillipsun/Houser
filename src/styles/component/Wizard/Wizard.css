@@ -1,0 +1,76 @@
+.wizard {
+  width: 50vw;
+  background-color: #e5f4ec;
+  position: relative;
+}
+
+.wizard__header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.wizard__heading {
+  font-size: 30px;
+  margin: 20px;
+  font-weight: 700;
+}
+
+.wizard__cancel-button {
+  margin: 20px;
+  border: none;
+  padding: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #fec2c2;
+}
+
+.wizard__listing-info {
+  margin: 20px auto;
+  width: 70%;
+}
+
+.wizard__input {
+  margin: 10px;
+  float: left;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.wizard__input > * {
+  margin: 2px;
+}
+
+.wizard__input > p {
+  margin-left: 12px;
+}
+
+.wizard__input > input {
+  border: 1px solid #519872;
+  border-radius: 2px;
+  height: 25px;
+}
+
+.wizard__address-input {
+  width: 35vw;
+}
+
+.wizard__state-input {
+  width: 70px;
+}
+
+.wizard__zip-input {
+  width: 100px;
+}
+
+.wizard__complete-button {
+  margin: 20px;
+  background-color: #8aea92;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
