@@ -1,6 +1,6 @@
 module.exports = {
 
-  // CREATE PRODUCT
+  // CREATE HOUSE
   createHouse: (req, res) => {
     console.log("Posting a new house...");
     
