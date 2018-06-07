@@ -41,7 +41,7 @@ export default class Dashboard extends Component {
       <div className="dashboard">
         <div className="dashboard__header">
           <h2 className="dashboard__heading">Dashboard</h2>
-          <button className='dashboard__header-button' onClick={ () => this.props.history.push('/wizard')}>Add New Property</button>
+          <button className='dashboard__header-button' onClick={ () => this.props.history.push('/wizard/step1')}>Add New Property</button>
         </div>
         <div className='dashboard__listings-container'>
           <h3 className='dashboard__listings-heading'>Home Listings</h3>
