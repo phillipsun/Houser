@@ -1,19 +1,24 @@
 .house__container {
-  width: 100%;
-  height: 150px;
-  background-color: #dedede;
+  background: #dedede;
+  display: flex;
   margin: 20px 0;
   position: relative;
+  width: 100%;
 }
 
-.house {
-  height: 100%;
-  width: 90%;
+.house__image {
+  width: 100%;
+}
+
+.house__image-container,
+.house__info,
+.house__rent-info {
+  flex: 0 0 33%;
   padding: 10px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+}
+
+.house__delete-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }

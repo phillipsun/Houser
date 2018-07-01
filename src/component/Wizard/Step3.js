@@ -49,7 +49,7 @@ class Step3 extends Component {
     let house = {
       name, address, city, state, zip, img, ...this.state
     };
-    axios.post('/api/pt2/house', house)
+    axios.post('/api/house', house)
       .then(res => {
         this.props.clear();
         this.props.history.push('/')
@@ -59,7 +59,7 @@ class Step3 extends Component {
     return (
       <div>
         <div className="wizard__input-container">
-          <div class="wizard__rec-rent-title" style={{ textAlign: 'center', fontWeight: '700', margin: '20px' }}>Recommended Rent: ${this.state.recommended}</div>
+          <div className="wizard__rec-rent-title" style={{ textAlign: 'center', fontWeight: '700', margin: '20px' }}>Recommended Rent: ${this.state.recommended}</div>
           <div className="wizard__input-box">
             <p>Monthly Mortgage Amount</p>
             <input className="wizard__mortgage-input" type='number' style={{ width: "35vw" }} value={this.state.mortgage} onChange={e => this.handleChange('mortgage', e.target.value)} />

@@ -6,11 +6,11 @@ module.exports = {
     
     const db = req.app.get('db');
     
-    const { name, address, city, state, zip } = req.body;
+    const { name, address, city, state, zip, img, mortgage, rent } = req.body;
     
-    console.log(req.body);
+    //console.log(req.body);
 
-    db.create_house([ name, address, city, state, zip ])
+    db.create_house([ name, address, city, state, zip, img, mortgage, rent ])
       .then( house => {
         console.log(house);
         res.status(200).send(house);

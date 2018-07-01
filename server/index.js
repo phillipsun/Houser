@@ -27,7 +27,6 @@ app.post('/api/house', controller.createHouse);
 // (DELETE) DELETE endpoint to delete a house
 app.delete('/api/house/:id', controller.deleteHouse);
 
-
 app.listen(4000, () => {
   console.log('Server is listening on port 4000');
 });
