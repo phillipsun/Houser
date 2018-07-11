@@ -10,7 +10,7 @@ export default function House(props) {
   return (
     <div className="house__container">
       <div className='house__image-container'>
-        <img className="house__image" src={img} alt="house image"/>
+        <img className="house__image" src={img} alt={`house img ${id}`}/>
       </div>
       <div className="house__info">
         <p>Property Name: {name}</p>
