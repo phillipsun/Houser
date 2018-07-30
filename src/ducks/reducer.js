@@ -12,7 +12,7 @@ const initialState = {
 const LOCATION_INFO = 'LOCATION_INFO';
 const IMG_INFO = 'IMG_INFO';
 const MONEY_INFO = 'MONEY_INFO';
-const CLEAR_INFO = 'CLEAR_INFO'
+const CLEAR_INFO = 'CLEAR_INFO';
 
 export default function reducer(state = initialState, action) {
   let { type, payload } = action;

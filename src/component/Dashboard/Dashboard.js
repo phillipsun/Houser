@@ -7,14 +7,13 @@ import House from '../House/House';
 // Import Styles
 import '../../styles/component/Dashboard/Dashboard.css'
 
-export default class Dashboard extends Component {
+class Dashboard extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       houses: []
     }
-
     this.getHouses = this.getHouses.bind(this);
     this.deleteHouse = this.deleteHouse.bind(this);
   }
@@ -45,13 +44,15 @@ export default class Dashboard extends Component {
         </div>
         <div className='dashboard__listings-container'>
           <h3 className='dashboard__listings-heading'>Home Listings</h3>
-          
+
           {this.state.houses.map(el => {
             return <House house={el} deleteHouse={this.deleteHouse} key={el.id} />
           })}
-          
+
         </div>
       </div>
     )
   }
 }
+
+export default Dashboard;

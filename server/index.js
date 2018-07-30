@@ -9,7 +9,8 @@ app.use(bodyParser.json());
 
 const controller = require('./controller');
 
-massive( process.env.CONNECTIONSTRING )
+// Connect to Database
+massive(process.env.CONNECTIONSTRING)
   .then( dbInstance => {
     app.set('db', dbInstance);
     console.log('Connected to database');
