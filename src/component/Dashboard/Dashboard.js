@@ -45,8 +45,8 @@ class Dashboard extends Component {
         <div className='dashboard__listings-container'>
           <h3 className='dashboard__listings-heading'>Home Listings</h3>
 
-          {this.state.houses.map(el => {
-            return <House house={el} deleteHouse={this.deleteHouse} key={el.id} />
+          {this.state.houses.map(house => {
+            return <House house={house} deleteHouse={this.deleteHouse} key={house.id} />
           })}
 
         </div>

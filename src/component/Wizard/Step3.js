@@ -73,7 +73,7 @@ class Step3 extends Component {
           this.props.updateMoney(this.state);
           this.props.history.push('/wizard/step2');
         }}>Previous Step</button>
-        <button className="wizard__button wizard__complete-button" onClick={this.complete}>Complete</button>
+        <button className="wizard__complete-button" onClick={this.complete}>Complete</button>
       </div>
     );
   }

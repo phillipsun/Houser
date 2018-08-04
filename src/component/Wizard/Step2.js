@@ -25,7 +25,6 @@ class Step2 extends Component {
   }
 
   render() {
-
     return (
       <div>
         <div className="wizard__input-container">
@@ -44,7 +43,7 @@ class Step2 extends Component {
           Previous Step
         </button>
         <button 
-          className="wiz_button wiz_step_button" 
+          className="wizard__button wiz_step_button" 
           onClick={ () => {
             this.props.updateImg(this.state.img);
             this.props.history.push('/wizard/step3');

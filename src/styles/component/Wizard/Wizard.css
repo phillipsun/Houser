@@ -4,10 +4,35 @@
   position: relative;
 }
 
-.wizard__header {
-  display: -ms-flexbox;
+.wizard__subheader {
   display: flex;
-  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.wizard__subheader-button {
+  margin: 20px;
+}
+
+.wizard__input-container {
+  padding: 0 1rem;
+}
+
+.wizard__input-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.wizard__input-box p {
+  margin-right: 20px;
+}
+
+.wizard__input-box input {
+  flex: 1 0 30%;
+}
+
+.wizard__header {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -24,6 +49,12 @@
   font-size: 15px;
   font-weight: 700;
   background-color: #fec2c2;
+}
+
+.wizard__button,
+.wizard__step-button {
+  margin: 20px;
+  height: 30px;
 }
 
 .wizard__listing-info {

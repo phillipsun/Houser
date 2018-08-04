@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 
 import store from './ducks/store';
 import './index.css';
+import './styles/resets.css'
 import App from './App';
 import { unregister } from './registerServiceWorker';
 

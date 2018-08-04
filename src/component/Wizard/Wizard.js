@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import { connect } from 'react-redux';
-
 import { clear } from './../../ducks/reducer';
 
 // Import Components

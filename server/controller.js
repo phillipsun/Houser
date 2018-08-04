@@ -3,16 +3,11 @@ module.exports = {
   // CREATE HOUSE
   createHouse: (req, res) => {
     console.log("Posting a new house...");
-    
     const db = req.app.get('db');
-    
     const { name, address, city, state, zip, img, mortgage, rent } = req.body;
-    
-    //console.log(req.body);
 
     db.create_house([ name, address, city, state, zip, img, mortgage, rent ])
       .then( house => {
-        console.log(house);
         res.status(200).send(house);
       })
       .catch( () => res.status(500).send() );
